@@ -1,2 +1,2 @@
 # dattachaya.github.io
-Dattachaya Temple Site
+Sample Site
