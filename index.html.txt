@@ -3,95 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dattachaya Panchayatan</title>
-    <style>
-        /* CSS Styling */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; }
-        header { background: #f8951d; color: white; padding: 1rem 0; text-align: center; }
-        nav { background: #333; color: white; padding: 0.5rem; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .hero { background: #f4f4f4; padding: 2rem; text-align: center; }
-        .container { padding: 2rem; }
-        section { margin-bottom: 2rem; }
-        h2 { color: #d35400; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; }
-        footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-        /* Responsive */
-        @media (max-width: 600px) { nav a { display: block; margin: 10px 0; } }
-    </style>
+    <title>My Simple Website</title>
 </head>
 <body>
-<header>
-    <h1>Dattachaya Panchayatan</h1>
-    <p></p>
-</header>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#timings">Darshan</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#donation">Donation</a>
-    <a href="#committee">Committee</a>
-</nav>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>This is a simple paragraph about the website's purpose.</p>
+        </section>
+    </main>
 
-<div class="hero">
-    <h2>Welcome to Dattachaya</h2>
-    <p>Experience peace, serenity, and divinity in the heart of the city.</p>
-</div>
-
-<div class="container">
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Founded in 2010, Dattachaya serves as a spiritual center for the community, dedicated to fostering devotion and cultural heritage.</p>
-    </section>
-
-    <section id="timings">
-        <h2>Daily Darshan Timings</h2>
-        <div class="card">
-            <p><strong>Morning:</strong> 6:00 AM - 2:00 PM</p>
-            <p><strong>Evening:</strong> 4:00 PM - 10:00 PM</p>
-            <p><em>Aarti Time: 7:00 AM Daily</em></p>
-        </div>
-    </section>
-
-    <section id="services">
-        <h2>Upcoming Festivals</h2>
-        <div class="grid">
-            <div class="card"><h3>Mahashivratri</h3><p>Monday, 16th February 2026</p></div>
-            <div class="card"><h3>Ganesh Chaturthi</h3><p>Monday, 14th September 2026 - Saturday, 19 September 2026</p></div>
-            <div class="card"><h3>Datta Jayanti</h3><p>Wednesday, 23rd December, 2026</p></div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact & Directions</h2>
-        <p>Mini Satellite Township, Colvale, Bardez Goa</p>
-        <p>Email: NA | Phone: NA</p>
-    </section>
-
-    
-    <section id="committee">
-        <h2>Our Committee</h2>
-        <div class="grid">
-            <div class="card"><h3>President</h3><p>Sumant Kanyalkar</p></div>
-            <div class="card"><h3>Treasurer</h3><p>Raghoba Kambli</p></div>
-            <div class="card"><h3>Member</h3><p>Sukhaji Naik</p></div>
-        </div>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2026 Dattachaya. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 My Simple Website</p>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-
-
