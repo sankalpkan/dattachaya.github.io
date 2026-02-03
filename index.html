@@ -19,7 +19,15 @@
         footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
         /* Responsive */
         @media (max-width: 600px) { nav a { display: block; margin: 10px 0; } }
+        function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </head>
 <body>
 
@@ -33,6 +41,7 @@
     <a href="#timings">Darshan</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
+    <a href="#donation">Donation</a>
     <a href="#committee">Committee</a>
 </nav>
 
@@ -68,6 +77,7 @@
     <section id="contact">
         <h2>Contact & Directions</h2>
         <p>Mini Satellite Township, Colvale, Bardez Goa</p>
+        <div id="googleMap" style="width:500px;height:400px;"></div>
         <p>Email: NA | Phone: NA</p>
     </section>
 
@@ -76,6 +86,8 @@
         <h2>Our Committee</h2>
         <div class="grid">
             <div class="card"><h3>President</h3><p>Sumant Kanyalkar</p></div>
+            <div class="card"><h3>Treasurer</h3><p>Raghoba Kambli</p></div>
+            <div class="card"><h3>Member</h3><p>Sukhaji Naik</p></div>
         </div>
     </section>
 </div>
@@ -86,5 +98,6 @@
 
 </body>
 </html>
+
 
 
