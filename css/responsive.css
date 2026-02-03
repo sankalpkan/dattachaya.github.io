@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .hero {
+    height: 55vh;
+  }
+
+  .video-container iframe,
+  .map-container iframe {
+    height: 250px;
+  }
+}

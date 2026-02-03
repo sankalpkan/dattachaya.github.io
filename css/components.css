@@ -1,0 +1,677 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--secondary);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--secondary);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* ================= HERO / HEADER ================= */
+
+.hero {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(247, 147, 30, 0.85),
+    rgba(247, 147, 30, 0.85)
+  );
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+.hero-content .timing {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* ================= TEMPLE INFO ================= */
+
+.temple-info-grid {
+  max-width: 1100px;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.info-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+#templeInfo h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+#templeInfo p {
+  margin-bottom: 0.4rem;
+}
+
+/* Stack on mobile */
+@media (max-width: 768px) {
+  .temple-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= FESTIVAL INFO TABLE ================= */
+
+.festival-table {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid #eee;
+}
+
+.festival-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.festival-row:last-child {
+  border-bottom: none;
+}
+
+.festival-header {
+  background: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.festival-row span:last-child {
+  text-align: right;
+  color: var(--accent);
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .festival-row {
+    grid-template-columns: 1fr;
+  }
+
+  .festival-row span:last-child {
+    text-align: left;
+    color: #555;
+  }
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-wrapper {
+  overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  transition: transform 0.4s ease-in-out;
+  grid-auto-columns: calc((100% - 3rem) / 4);
+}
+
+/* Mobile: 1 image */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-auto-columns: 100%;
+    gap: 0;
+  }
+}
+
+.img-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #eee;
+  cursor: pointer;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Pagination dots */
+.gallery-dots {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.gallery-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #bbb;
+}
+
+.gallery-dots span.active {
+  background: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .gallery-dots {
+    display: flex;
+  }
+}
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ================= YOUTUBE ================= */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ================= DONATION & CONTACT ================= */
+
+.donation-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.donation-card,
+.contact-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.donate-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.donate-btn:hover {
+  background: var(--accent);
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-card input,
+.contact-card textarea {
+  padding: 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-card button {
+  padding: 0.7rem;
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-card button:hover {
+  background: var(--accent);
+}
+
+/* ================= COMMITTEE ================= */
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.committee-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.committee-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.committee-card h4 {
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+}
+
+.committee-card h5 {
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.committee-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ================= MAJOR FESTIVALS CAROUSEL ================= */
+
+.festival-wrapper {
+  overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.festival-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 3rem) / 4);
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .festival-track {
+    grid-auto-columns: 100%;
+  }
+}
+
+.festival-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.festival-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.festival-card p {
+  padding: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ================= VISIT US (BOXED LIKE MAJOR FESTIVALS) ================= */
+
+.visit-section {
+  background: var(--bg-light);
+  padding: 4rem 0;
+}
+
+/* Section heading */
+.visit-header {
+  max-width: 1100px;              /* 🔑 SAME AS FESTIVALS */
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.visit-header h2 {
+  color: var(--accent);
+}
+
+/* BOXED content (this is the red rectangle you want) */
+.visit-content {
+  max-width: 1100px;              /* 🔑 KEY FIX */
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;        /* beige shows around */
+
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2rem;
+}
+
+/* Address card */
+.visit-info {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.visit-info h3 {
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.visit-info p {
+  margin-bottom: 0.5rem;
+}
+
+.visit-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.25rem;
+}
+
+/* Directions button */
+.directions-btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.directions-btn:hover {
+  background: var(--accent);
+}
+
+/* Map card */
+.visit-map {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.visit-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  border: none;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .visit-content {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .visit-map iframe {
+    min-height: 280px;
+  }
+}
+
+
+/* ================= TEMPLE PROGRAMS ================= */
+
+.programs-section {
+  background: var(--bg-light);
+}
+
+.programs-card {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.programs-card h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+#festivals .festival-wrapper {
+  padding-top: 1rem;
+}
+/* ===== VISIT US WIDTH FIX (SAFE) ===== */
+
+.visit-wrapper {
+  max-width: 1100px;   /* SAME as festival-wrapper */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.visit-content {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .visit-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Make Visit Us behave like other sections */
+.visit-section {
+  padding: 0; /* section already provides padding */
+}
+
+/* Boxed content */
+.visit-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.visit-wrapper h2 {
+  margin-left: -1.5rem;
+}
+
+/* ===== Upcoming Festivals – Mobile Friendly ===== */
+@media (max-width: 768px) {
+  .festival-table {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .festival-row {
+    display: block;
+    background: var(--white);
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  /* Hide header row on mobile */
+  .festival-header {
+    display: none;
+  }
+
+  .festival-row span:first-child {
+    display: block;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+
+  .festival-row span:last-child {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+  }
+}
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switcher button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: var(--white);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.lang-switcher button.active {
+  background: var(--primary);
+  border-color: var(--primary);
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Dattachaya Panchayatan",
+  "mantra": "ॐ श्री गुरुदेव दत्त ॐ",
+  "address": {
+    "line1": "Temple Road",
+    "line2": "Your Area",
+    "city": "Your City",
+    "state": "Your State",
+    "country": "India"
+  },
+  "contact": {
+    "phone": "+91-XXXXXXXXXX",
+    "email": "temple@email.com"
+  },
+  "timings": {
+    "morning": "6:00 AM – 10:00 AM",
+    "evening": "4:30 PM – 10:00 PM"
+  },
+  "festivals": [
+    "Mahashivratri",
+    "Ram Navami",
+    "Janmashtami",
+    "Navratri"
+  ]
+}
