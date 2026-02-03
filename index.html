@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Dattachaya Panchayatan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+        <div class="nav-logo" data-i18n="nav.title">Dattachaya Panchayatan</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#templeInfo" data-i18n="nav.info">Info</a></li>
+            <li><a href="#contact" data-i18n="nav.donation">Donation</a></li>
+            <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="#programs" data-i18n="nav.programs">Programs</a></li>
+            <li><a href="#festivals" data-i18n="nav.festivals">Festivals</a></li>
+            <li><a href="#visit" data-i18n="nav.visit">Visit Us</a></li>
+            <li><a href="#committee" data-i18n="nav.committee">Our Committee</a></li>
+        </ul>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+            <button data-lang="en">EN</button>
+            <button data-lang="mr">मराठी</button>
+            <button data-lang="hi">हिंदी</button>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= HEADER / SLIDER ================= -->
+<header class="hero">
+    <div class="slider" id="heroSlider"></div>
+
+    <div class="hero-content">
+        <h1 id="templeName" data-i18n="hero.title"></h1>
+        <p id="templeMantra" data-i18n="hero.mantra"></p>
+        <p class="timing" id="templeTimings" data-i18n="hero.timings"></p>
+    </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+    <h2 data-i18n="about.title">About the Temple</h2>
+    <p data-i18n="about.description">
+        Our temple is a spiritual center dedicated to preserving Sanatana Dharma,
+        hosting daily poojas, festivals, and community programs.
+    </p>
+</section>
+
+<!-- ================= TEMPLE INFO ================= -->
+<section class="section light" id="templeInfo">
+    <h2 data-i18n="info.title">Temple Information</h2>
+
+    <div class="temple-info-grid">
+
+        <div class="info-card">
+            <h4 data-i18n="info.addressTitle">Address</h4>
+            <p id="templeAddress" data-i18n="info.address"></p>
+
+            <h4 data-i18n="info.timingsTitle">Timings</h4>
+            <p id="timingsMorning" data-i18n="info.timingsMorning"></p>
+            <p id="timingsEvening" data-i18n="info.timingsEvening"></p>
+
+            <h4 data-i18n="info.contactTitle">Contact</h4>
+            <p id="templePhone" data-i18n="info.phone"></p>
+            <p id="templeEmail" data-i18n="info.email"></p>
+        </div>
+
+        <div class="info-card">
+            <h4 data-i18n="info.upcoming">Upcoming Festivals</h4>
+
+            <div class="festival-table">
+                <div class="festival-row festival-header">
+                    <span data-i18n="festival.festival">Festival</span>
+                    <span data-i18n="festival.date">Date</span>
+                </div>
+
+                <div class="festival-row">
+                    <span data-i18n="festival.mahashivratri">Mahashivratri</span>
+                    <span>8 March 2026</span>
+                </div>
+
+                <div class="festival-row">
+                    <span data-i18n="festival.dattaJayanti">Datta Jayanti</span>
+                    <span>15 December 2025</span>
+                </div>
+
+                <div class="festival-row">
+                    <span data-i18n="festival.ganeshChaturthi">Ganesh Chaturthi</span>
+                    <span>7 September 2025</span>
+                </div>
+
+                <div class="festival-row">
+                    <span data-i18n="festival.kojagiri">Kojagiri Paurnima</span>
+                    <span>6 October 2025</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= DONATION ================= -->
+<section class="section light" id="contact">
+    <h2 data-i18n="donation.title">Donation & Contact</h2>
+
+    <div class="donation-contact-grid">
+
+        <div class="donation-card">
+            <h3 data-i18n="donation.support">Support the Temple</h3>
+            <p data-i18n="donation.text">
+                Your contribution helps us maintain daily rituals, festivals, and community services.
+            </p>
+
+            <a href="https://example.com/donate" target="_blank"
+               class="donate-btn" data-i18n="donation.button">
+                Donate Now
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <h3 data-i18n="contact.title">Contact Us</h3>
+
+            <form action="mailto:temple@email.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" data-i18n="contact.send">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section light gallery-section" id="gallery">
+    <h2 data-i18n="gallery.title">Gallery</h2>
+
+    <div class="gallery-wrapper">
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+
+    <div class="gallery-dots" id="galleryDots"></div>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section class="section light programs-section" id="programs">
+    <h2 data-i18n="programs.title">Temple Programs</h2>
+
+    <div class="programs-card">
+        <h3 data-i18n="programs.live">Live / Past Programs</h3>
+
+        <div class="video-wrapper">
+            <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PLTBMK7p-z23PjAHJBR9bJFXF37htZSG3-"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MAJOR FESTIVALS ================= -->
+<section class="section light" id="festivals">
+    <h2 data-i18n="festivals.title">Major Festivals</h2>
+
+    <div class="festival-wrapper">
+        <div class="festival-track" id="festivalTrack">
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/mahashivratri.jpg" alt="Mahashivratri">
+                <p>Mahashivratri</p>
+            </div>
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/datta-jayanti.jpg" alt="Datta Jayanti">
+                <p>Datta Jayanti</p>
+            </div>
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/ganesh-chaturthi.jpg" alt="Ganesh Chaturthi">
+                <p>Ganesh Chaturthi</p>
+            </div>
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/kojagiri.jpg" alt="Kojagiri Paurnima">
+                <p>Kojagiri Paurnima</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= VISIT US ================= -->
+<section id="visit" class="section light">
+    <h2 data-i18n="visit.title">Visit Us</h2>
+
+    <div class="visit-wrapper">
+        <div class="visit-content">
+
+            <div class="visit-info">
+                <h3 data-i18n="visit.temple">Dattachaya Temple</h3>
+                <p data-i18n="visit.address">
+                    Mini Satellite Twp,<br>Kolval, Goa – 403502
+                </p>
+                <p class="visit-note" data-i18n="visit.nearby">
+                    Near Shri Ram Vidya Mandir School
+                </p>
+
+                <a class="directions-btn"
+                   href="https://www.google.com/maps/dir/?api=1&destination=Dattachaya+Temple+Kolval+Goa"
+                   target="_blank"
+                   data-i18n="visit.directions">
+                    Get Directions
+                </a>
+            </div>
+
+            <div class="visit-map">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.3174722406134!2d73.82515847438222!3d15.628073851098417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb4519774905%3A0x81c348f91258cc99!2sDattachaya%20Temple!5e0!3m2!1sen!2sin!4v1770137000570!5m2!1sen!2sin"
+                        loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= COMMITTEE ================= -->
+<section class="section" id="committee">
+    <h2 data-i18n="committee.title">Our Committee</h2>
+
+    <div class="committee-grid">
+        <div class="committee-card">
+            <img src="assets/images/committee/president.jpg" alt="President">
+            <h4>Sumant Kanyalkar</h4>
+            <h5>Former Principal R&P Salkar HSS</h5>
+            <p>President</p>
+        </div>
+
+        <div class="committee-card">
+            <img src="assets/images/committee/secretary.jpg" alt="Secretary">
+            <h4>Sukhaji Naik</h4>
+            <h5>Former GPSC Chairman</h5>
+            <p>Secretary</p>
+        </div>
+
+        <div class="committee-card">
+            <img src="assets/images/committee/treasurer.jpg" alt="Treasurer">
+            <h4>Raghoba Kambli</h4>
+            <h5>Zilla Panchayat Member Tuem</h5>
+            <p>Treasurer</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p data-i18n="footer.text">© 2026 Dattachaya Panchayatan</p>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" />
+</div>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/festivals.js"></script>
+<script src="js/i18n.js"></script>
+
+</body>
+</html>
