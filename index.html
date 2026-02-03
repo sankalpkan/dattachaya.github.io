@@ -3,32 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simplest Website</title>
+    <title>Sri Ganesh Temple | Welcome to Our Sacred Abode</title>
+    <style>
+        /* CSS Styling */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; }
+        header { background: #f8951d; color: white; padding: 1rem 0; text-align: center; }
+        nav { background: #333; color: white; padding: 0.5rem; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { background: #f4f4f4; padding: 2rem; text-align: center; }
+        .container { padding: 2rem; }
+        section { margin-bottom: 2rem; }
+        h2 { color: #d35400; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .card { border: 1px solid #ddd; padding: 1rem; border-radius: 5px; }
+        footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+        /* Responsive */
+        @media (max-width: 600px) { nav a { display: block; margin: 10px 0; } }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a simple paragraph about the website's purpose.</p>
-        </section>
-    </main>
+<header>
+    <h1>Sri Ganesh Temple</h1>
+    <p>Connecting Devotees with the Divine</p>
+</header>
 
-    <footer>
-        <p>&copy; 2026 My Simple Website</p>
-    </footer>
+<nav>
+    <a href="#about">About</a>
+    <a href="#timings">Darshan</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Welcome to Our Temple</h2>
+    <p>Experience peace, serenity, and divinity in the heart of the city.</p>
+</div>
+
+<div class="container">
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in 1990, the Sri Ganesh Temple serves as a spiritual center for the community, dedicated to fostering devotion and cultural heritage.</p>
+    </section>
+
+    <section id="timings">
+        <h2>Daily Darshan Timings</h2>
+        <div class="card">
+            <p><strong>Morning:</strong> 6:00 AM - 12:00 PM</p>
+            <p><strong>Evening:</strong> 4:00 PM - 9:00 PM</p>
+            <p><em>Aarti Time: 7:00 PM Daily</em></p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services & Poojas</h2>
+        <div class="grid">
+            <div class="card"><h3>Special Archana</h3><p>Daily morning and evening.</p></div>
+            <div class="card"><h3>Satyanarayana Puja</h3><p>Full Moon day (Purnima).</p></div>
+            <div class="card"><h3>Wedding Services</h3><p>Available on request.</p></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Directions</h2>
+        <p>123 Temple Road, Spiritual Nagar, City</p>
+        <p>Email: info@ganeshtemple.org | Phone: +91 99999 00000</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Sri Ganesh Temple. All rights reserved.</p>
+</footer>
+
 </body>
-
 </html>
-
-
