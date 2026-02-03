@@ -19,8 +19,10 @@
         footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
         /* Responsive */
         @media (max-width: 600px) { nav a { display: block; margin: 10px 0; } }
-        
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</head>
+<body>
     <script>
         function myMap() {
         var mapProp= {
@@ -30,10 +32,6 @@
         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-</head>
-<body>
-
 <header>
     <h1>Dattachaya Panchayatan</h1>
     <p></p>
@@ -101,6 +99,7 @@
 
 </body>
 </html>
+
 
 
 
