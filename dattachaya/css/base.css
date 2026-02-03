@@ -1,0 +1,33 @@
+:root {
+  /* ===== Temple Theme Colors ===== */
+  --primary: #F7931E;      /* Saffron */
+  --secondary: #2E2E2E;    /* Deep charcoal */
+  --accent: #8B1E1E;       /* Sacred maroon */
+  --bg-light: #FFF6E5;     /* Parchment */
+  --white: #FFFFFF;
+  --text-dark: #1E1E1E;
+
+  --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+

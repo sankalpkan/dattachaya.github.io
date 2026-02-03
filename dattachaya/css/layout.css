@@ -1,0 +1,43 @@
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto 3rem auto; /* 👈 IMPORTANT */
+}
+
+
+.section.light {
+  background: var(--bg-light);
+}
+
+/* Section headings */
+.section h2,
+.section h3,
+.section h4 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* Optional subtle divider */
+.section {
+  border-top: 3px solid rgba(247, 147, 30, 0.15);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: var(--secondary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.section + .section {
+  border-top: 4px solid rgba(247, 147, 30, 0.25);
+}
+
+.gallery-section {
+  background: #FFF0D8; /* slightly deeper than bg-light */
+}
