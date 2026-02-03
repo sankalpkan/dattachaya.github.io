@@ -19,14 +19,17 @@
         footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
         /* Responsive */
         @media (max-width: 600px) { nav a { display: block; margin: 10px 0; } }
-        function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
+        
     </style>
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </head>
 <body>
@@ -98,6 +101,7 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 </body>
 </html>
+
 
 
 
