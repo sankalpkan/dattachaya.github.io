@@ -274,6 +274,8 @@
   }
 }
 
+
+
 .img-box {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -899,23 +901,6 @@
   .festival-card {
     height: 220px;
   }
-}
-.festival-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.festival-card img {
-  flex: 1;
-}
-
-.festival-card p {
-  position: static;
-  background: var(--white);
-  color: var(--accent);
-  padding: 0.6rem;
-  margin: 0;
-  text-align: center;
 }
 /* ================= MOBILE GALLERY HEIGHT FIX ================= */
 
