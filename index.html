@@ -154,11 +154,26 @@
 <section class="section light gallery-section" id="gallery">
     <h2 data-i18n="gallery.title">Gallery</h2>
 
-    <div class="gallery-wrapper">
-        <div class="gallery-grid" id="galleryGrid"></div>
-    </div>
+    <div class="carousel-container">
+        <button class="carousel-arrow left" data-target="galleryGrid">&#10094;</button>
 
-    <div class="gallery-dots" id="galleryDots"></div>
+        <div class="gallery-wrapper">
+            <div class="gallery-grid auto-carousel" id="galleryGrid">
+            <img src="assets/images/gallery/img1.jpg">
+            <img src="assets/images/gallery/img2.jpg">
+            <img src="assets/images/gallery/img3.jpg">
+            <img src="assets/images/gallery/img4.jpg">
+            <img src="assets/images/gallery/img4.jpg">
+            <img src="assets/images/gallery/img3.jpg">
+            <img src="assets/images/gallery/img2.jpg">
+            <img src="assets/images/gallery/img2.jpg">
+            <img src="assets/images/gallery/img2.jpg">
+            <img src="assets/images/gallery/img4.jpg">
+            </div>
+        </div>
+
+        <button class="carousel-arrow right" data-target="galleryGrid">&#10095;</button>
+    </div>
 </section>
 
 <!-- ================= PROGRAMS ================= -->
@@ -181,14 +196,39 @@
 <section class="section light" id="festivals">
     <h2 data-i18n="festivals.title">Major Festivals</h2>
 
-    <div class="festival-wrapper">
-        <div class="festival-track" id="festivalTrack">
+    <div class="carousel-container">
+        <button class="carousel-arrow left" data-target="festivalTrack">&#10094;</button>
 
+        <div class="festival-wrapper">
+            <div class="festival-track auto-carousel" id="festivalTrack">
             <div class="festival-card">
                 <img src="assets/images/festivals/mahashivratri.jpg" alt="Mahashivratri">
-                <p>Mahashivratri</p>
+                <p data-i18n="festival.Mahashivaratri">Mahashivaratri</p>
             </div>
 
+            <div class="festival-card">
+                <img src="assets/images/festivals/datta-jayanti.jpg" alt="Datta Jayanti">
+                <p data-i18n="festival.dattaJayanti">Datta Jayanti</p>
+            </div>
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/ganesh-chaturthi.jpg" alt="Ganesh Chaturthi">
+                <p data-i18n="festival.ganeshChaturthi">Ganesh Chaturthi</p>
+            </div>
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/kojagiri.jpg" alt="Kojagiri Paurnima">
+                <p data-i18n="festival.kojagiri">Kojagiri Paurnima</p>
+            </div>
+            <div class="festival-card">
+                <img src="assets/images/festivals/datta-jayanti.jpg" alt="Datta Jayanti">
+                <p>Datta Jayanti</p>
+            </div>
+
+            <div class="festival-card">
+                <img src="assets/images/festivals/ganesh-chaturthi.jpg" alt="Ganesh Chaturthi">
+                <p>Ganesh Chaturthi</p>
+            </div>
             <div class="festival-card">
                 <img src="assets/images/festivals/datta-jayanti.jpg" alt="Datta Jayanti">
                 <p>Datta Jayanti</p>
@@ -199,12 +239,15 @@
                 <p>Ganesh Chaturthi</p>
             </div>
 
+
             <div class="festival-card">
                 <img src="assets/images/festivals/kojagiri.jpg" alt="Kojagiri Paurnima">
                 <p>Kojagiri Paurnima</p>
             </div>
-
+            </div>
         </div>
+
+        <button class="carousel-arrow right" data-target="festivalTrack">&#10095;</button>
     </div>
 </section>
 
@@ -218,7 +261,7 @@
             <div class="visit-info">
                 <h3 data-i18n="visit.temple">Dattachaya Temple</h3>
                 <p data-i18n="visit.address">
-                    Mini Satellite Twp,<br>Kolval, Goa – 403502
+                    Mini Satellite Twp,<br>Colvale, Goa – 403513
                 </p>
                 <p class="visit-note" data-i18n="visit.nearby">
                     Near Shri Ram Vidya Mandir School
@@ -251,21 +294,18 @@
         <div class="committee-card">
             <img src="assets/images/committee/president.jpg" alt="President">
             <h4>Sumant Kanyalkar</h4>
-            <h5>Former Principal R&P Salkar HSS</h5>
             <p>President</p>
         </div>
 
         <div class="committee-card">
             <img src="assets/images/committee/secretary.jpg" alt="Secretary">
             <h4>Sukhaji Naik</h4>
-            <h5>Former GPSC Chairman</h5>
             <p>Secretary</p>
         </div>
 
         <div class="committee-card">
             <img src="assets/images/committee/treasurer.jpg" alt="Treasurer">
             <h4>Raghoba Kambli</h4>
-            <h5>Zilla Panchayat Member Tuem</h5>
             <p>Treasurer</p>
         </div>
     </div>
@@ -285,9 +325,8 @@
 <!-- JS -->
 <script src="js/main.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/gallery.js"></script>
-<script src="js/festivals.js"></script>
 <script src="js/i18n.js"></script>
+<script src="js/autoCarousel.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,12 @@
 {
+  "meta": {
+    "title": "Dattachaya Panchayatan"
+  },
+  "hero": {
+    "title": "Shri Dattachaya Panchayatan",
+    "mantra": "Shri Gurudev Datta",
+    "timings": "Open Daily • Morning & Evening Aarti"
+  },
   "nav": {
     "title": "Dattachaya Panchayatan",
     "about": "About",
@@ -16,28 +24,37 @@
     "description": "Our temple is a spiritual center dedicated to preserving Sanatana Dharma, hosting daily poojas, festivals, and community programs."
   },
 
-  "templeInfo": {
+  "info": {
     "title": "Temple Information",
-    "address": "Address",
-    "timings": "Timings",
-    "contact": "Contact",
-    "morning": "Morning",
-    "evening": "Evening",
-    "upcomingFestivals": "Upcoming Festivals",
+    "addressTitle": "Address",
+    "address": "Mini Satellite Township, Colvale, Goa – 403513",
+    "timingsTitle": "Timings",
+    "timingsMorning": "Morning",
+    "timingsEvening": "Evening",
+    "contactTitle": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "upcoming": "Upcoming Festivals"
+  },
+
+  "festival": {
     "festival": "Festival",
-    "date": "Date"
+    "date": "Date",
+    "Mahashivaratri": "Mahashivaratri",
+    "dattaJayanti": "Datta Jayanti",
+    "ganeshChaturthi": "Ganesh Chaturthi",
+    "kojagiri": "Kojagiri Paurnima"
   },
 
   "donation": {
     "title": "Donation & Contact",
-    "supportTitle": "Support the Temple",
-    "supportText": "Your contribution helps us maintain daily rituals, festivals, and community services.",
-    "donateNow": "Donate Now",
-    "note": "(UPI / Bank / Trust donation link)",
-    "contactTitle": "Contact Us",
-    "namePlaceholder": "Your Name",
-    "emailPlaceholder": "Your Email",
-    "messagePlaceholder": "Your Message",
+    "support": "Support the Temple",
+    "text": "Your contribution helps us maintain daily rituals, festivals, and community services.",
+    "button": "Donate Now"
+  },
+
+  "contact": {
+    "title": "Contact Us",
     "send": "Send Message"
   },
 
@@ -47,7 +64,7 @@
 
   "programs": {
     "title": "Temple Programs",
-    "livePast": "Live / Past Programs"
+    "live": "Live / Past Programs"
   },
 
   "festivals": {
@@ -56,9 +73,9 @@
 
   "visit": {
     "title": "Visit Us",
-    "templeName": "Dattachaya Temple",
+    "temple": "Dattachaya Temple",
     "address": "Mini Satellite Township, Colvale, Goa – 403513",
-    "near": "Near Shri Ram Vidya Mandir School",
+    "nearby": "Near Shri Ram Vidya Mandir School",
     "directions": "Get Directions"
   },
 
@@ -70,6 +87,6 @@
   },
 
   "footer": {
-    "copyright": "© 2026 Dattachaya Panchayatan"
+    "text": "© 2026 Dattachaya Panchayatan"
   }
 }

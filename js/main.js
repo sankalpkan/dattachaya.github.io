@@ -56,3 +56,34 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     navLinks.classList.remove("active");
   });
 });
+
+const defaultLang = "en";
+
+async function loadLang(lang) {
+  try {
+    const res = await fetch(`i18n/${lang}.json`);
+    const data = await res.json();
+    applyTranslations(data);
+    localStorage.setItem("lang", lang);
+  } catch (e) {
+    console.warn("Language load failed", e);
+  }
+}
+
+function applyTranslations(data) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    const value = key.split(".").reduce((o, i) => o?.[i], data);
+    if (value) el.textContent = value;
+  });
+}
+
+document.querySelectorAll(".lang-switcher button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".lang-switcher button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    loadLang(btn.dataset.lang);
+  });
+});
+
+loadLang(localStorage.getItem("lang") || defaultLang);
